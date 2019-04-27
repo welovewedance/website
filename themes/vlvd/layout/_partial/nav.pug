@@ -1,2 +1,9 @@
 each item, key in theme.menu
-    a(class="mdl-navigation__link" href=url_for(item))= key
+    - var url = url_for(item);
+    if is_current(url)
+        a.mdc-list-item.mdc-list-item--activated(href=url aria-current="page")
+            //- i.material-icons.mdc-list-item__graphic(aria-hidden="true") inbox
+            span.mdc-list-item__text= key
+    else
+        a.mdc-list-item(href=url)
+            span.mdc-list-item__text= key
