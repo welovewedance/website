@@ -2,3 +2,13 @@
 menu:
   首頁: /
   聯絡客服: /contact
+
+# Facebook
+facebook: 
+  chat:
+    page_id: 1827573984160543
+    logged_in_greeting: Hi!
+    logged_out_greeting: Hi!
+
+# Line [https://line.me/R/ti/p/%40425yeuur > line://ti/p/%40425yeuur]
+line: line://ti/p/%40425yeuur

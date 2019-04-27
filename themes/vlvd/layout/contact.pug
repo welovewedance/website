@@ -1,0 +1,72 @@
+extends _partial/layout
+
+block content
+    script.
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        };
+        
+        function show() {
+            if(isMobileDevice()){
+                [].forEach.call(document.getElementsByClassName("js-layout--moible-device-only"), element => {
+                    element.classList.remove("js-layout--moible-device-only");
+                    element.classList.add("is-moible-device");
+                });
+            }     
+        }
+
+        window.onload = show;
+
+        if(!isMobileDevice()){
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v3.2'
+            });
+            };
+      
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        }
+
+    style. 
+        .line-customerchat {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 24px;
+            margin-bottom: 24px;
+            z-index: 900;
+            background: #00b900 !important;
+        }
+
+        .line-customerchat img {
+            width: 48px;
+            height: 48px;    
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+
+        .js-layout--moible-device-only {
+            visibility: hidden;
+        }
+
+        .is-moible-device {
+            visibility: visible;
+        }
+
+    div.fb-customerchat(
+        attribution=setup_tool
+        page_id= theme.facebook.chat.page_id
+        logged_in_greeting= theme.facebook.chat.logged_in_greeting
+        logged_out_greeting= theme.facebook.chat.logged_out_greeting
+        minimized="false")
+
+    a.mdc-fab.line-customerchat.js-layout--moible-device-only(href= theme.line)
+        img(src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg")       
