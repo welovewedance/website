@@ -1,14 +1,15 @@
-# Header
+# Header [ menu > group > item ]
 menu:
-  首頁: /
-  聯絡客服: /contact
-
-# Facebook
-facebook: 
-  chat:
-    page_id: 1827573984160543
-    logged_in_greeting: Hi!
-    logged_out_greeting: Hi!
-
-# Line [https://line.me/R/ti/p/%40425yeuur > line://ti/p/%40425yeuur]
-line: line://ti/p/%40425yeuur
+  default:
+    派對活動:
+      url: /
+      icon: local_activity
+  聯絡我們: 
+    Messenger:
+      url: https://m.me/welovewedance
+      external: true
+      img: https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg
+    LINE:
+      url: https://line.me/R/ti/p/%40425yeuur
+      external: true
+      img: https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg

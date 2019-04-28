@@ -1,9 +1,18 @@
-each item, key in theme.menu
-    - var url = url_for(item);
-    if is_current(url)
-        a.mdc-list-item.mdc-list-item--activated(href=url aria-current="page")
-            //- i.material-icons.mdc-list-item__graphic(aria-hidden="true") inbox
-            span.mdc-list-item__text= key
-    else
-        a.mdc-list-item(href=url)
-            span.mdc-list-item__text= key
+each group, group_name in theme.menu
+    if(group_name != "default")
+        hr.mdc-list-divider
+        h6.mdc-list-group__subheader= group_name 
+
+    each item, item_name in group
+        -
+         var target = item.external ? "_blank" : null
+         var aria_current = is_current(item.url) ? "page" : null
+         var classes = is_current(item.url) ? "mdc-list-item mdc-list-item--activated" : "mdc-list-item"
+        
+        a(href=item.url class=classes aria-current=aria_current target=target)
+            i.material-icons.mdc-list-item__graphic(aria-hidden="true")
+                if item.icon
+                    =item.icon
+                else if item.img
+                    img(src=item.img width="24")
+            span.mdc-list-item__text= item_name
