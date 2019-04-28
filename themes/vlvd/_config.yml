@@ -13,3 +13,10 @@ menu:
       url: https://line.me/R/ti/p/%40425yeuur
       external: true
       img: https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg
+
+node_sass:
+  includePaths:
+    - "./node_modules"
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
