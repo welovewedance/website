@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mdc-top-app-bar {
   background-color: #6200ee;
   /* @alternate */
@@ -321,3 +322,56 @@
     .mdc-top-app-bar .mdc-top-app-bar__action-item.mdc-ripple-upgraded,
     .mdc-top-app-bar .mdc-top-app-bar__navigation-icon.mdc-ripple-upgraded {
       --mdc-ripple-fg-opacity: 0.12; }
+
+body {
+  font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif; }
+
+article {
+  max-width: 740px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+  article header h1 {
+    margin: 0;
+    padding-top: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 2.1em; }
+  article header h2 {
+    margin: 0;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: -.012em;
+    font-size: 1.4em; }
+  article p {
+    margin-top: 29px;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em; }
+  article ul, article ol {
+    margin-top: 29px;
+    padding: 0;
+    list-style: none;
+    counter-reset: post; }
+    article ul li, article ol li {
+      margin-left: 30px;
+      margin-bottom: 14px;
+      font-size: 21px;
+      line-height: 1.58;
+      letter-spacing: -.003em; }
+  article ul li:before {
+    width: 78px;
+    position: absolute;
+    padding-top: 4px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    font-size: 16.8px;
+    margin-left: -78px;
+    text-align: right;
+    content: "\2022"; }
+  article ol li:before {
+    width: 78px;
+    position: absolute;
+    padding-right: 12px; }

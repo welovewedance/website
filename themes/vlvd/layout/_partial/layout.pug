@@ -9,9 +9,8 @@ html(lang="zh-Hant-TW")
 
         include top-app-bar
 
-        main
-            div.mdc-top-app-bar--fixed-adjust
-                block content
+        main.mdc-top-app-bar--fixed-adjust
+            block content
 
         script.
             var drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector(".mdc-drawer"));
