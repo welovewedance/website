@@ -12,7 +12,27 @@
 <meta property="og:image:width" content="460">
 <meta property="og:url" content="www.welovewedance.com">
 <meta property="og:description" content="一場歡樂又浪漫的舞蹈派對，分組活動輕鬆交流，還有午茶搭配美味點心，一起 好好地玩耍！無須舞蹈經驗、無須攜伴參加，輕鬆在舞動延展中愛上自己、認識 他人！來加入最浪漫、最時尚的交友派對！">
-<meta property="og:title" content="樂舞派對"><link rel="stylesheet" href="/css/normalize.css"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"><link rel="stylesheet" href="/css/style.css"><script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script></head><body><aside class="mdc-drawer mdc-drawer--modal"><div class="mdc-drawer__header"><a href="/"><img src="/imgs/top-app-bar-logo.jpg" height="56"><img src="/imgs/top-app-bar-text.jpg" height="56"></a></div><div class="mdc-drawer__content"><nav class="mdc-list"><a class="mdc-list-item" href="/"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_activity</i><span class="mdc-list-item__text">派對活動</span></a><hr class="mdc-list-divider"><h6 class="mdc-list-group__subheader">聯絡我們</h6><a class="mdc-list-item" href="https://m.me/welovewedance" target="_blank"><i class="material-icons mdc-list-item__graphic" aria-hidden="true"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg" width="24"></i><span class="mdc-list-item__text">Messenger</span></a><a class="mdc-list-item" href="https://line.me/R/ti/p/%40425yeuur" target="_blank"><i class="material-icons mdc-list-item__graphic" aria-hidden="true"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" width="24"></i><span class="mdc-list-item__text">LINE</span></a></nav></div></aside><div class="mdc-drawer-scrim"></div><header class="mdc-top-app-bar mdc-top-app-bar"><div class="mdc-top-app-bar__row"><section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"><button class="material-icons mdc-top-app-bar__navigation-icon">menu</button><a href="/"><img src="/imgs/top-app-bar-logo.jpg" height="56"><img src="/imgs/top-app-bar-text.jpg" height="56"></a></section></div></header><main class="mdc-top-app-bar--fixed-adjust"><div style="position: fixed;left: 0;right: 0;top: 50px; bottom: 0;-webkit-overflow-scrolling: touch"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScf6s4EG-X4s1Y-6whA7NPaOwQnfAEIsdKLf_-rRrwvEoaTjQ/viewform?embedded=true" style="width:100%;height: 100%;" frameborder="0"></iframe></div></main><script>var drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector(".mdc-drawer"));
+<meta property="og:title" content="樂舞派對"><link rel="stylesheet" href="/css/normalize.css"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"><link rel="stylesheet" href="/css/style.css"><script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script></head><body><aside class="mdc-drawer mdc-drawer--modal"><div class="mdc-drawer__header"><a href="/"><img src="/imgs/top-app-bar-logo.jpg" height="56"><img src="/imgs/top-app-bar-text.jpg" height="56"></a></div><div class="mdc-drawer__content"><nav class="mdc-list"><a class="mdc-list-item" href="/"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_activity</i><span class="mdc-list-item__text">派對活動</span></a><hr class="mdc-list-divider"><h6 class="mdc-list-group__subheader">聯絡我們</h6><a class="mdc-list-item" href="https://m.me/welovewedance" target="_blank"><i class="material-icons mdc-list-item__graphic" aria-hidden="true"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg" width="24"></i><span class="mdc-list-item__text">Messenger</span></a><a class="mdc-list-item" href="https://line.me/R/ti/p/%40425yeuur" target="_blank"><i class="material-icons mdc-list-item__graphic" aria-hidden="true"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" width="24"></i><span class="mdc-list-item__text">LINE</span></a></nav></div></aside><div class="mdc-drawer-scrim"></div><header class="mdc-top-app-bar mdc-top-app-bar"><div class="mdc-top-app-bar__row"><section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"><button class="material-icons mdc-top-app-bar__navigation-icon">menu</button><a href="/"><img src="/imgs/top-app-bar-logo.jpg" height="56"><img src="/imgs/top-app-bar-text.jpg" height="56"></a></section></div></header><main class="mdc-top-app-bar--fixed-adjust"><script>function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
+function removeFixedPosition() {
+    if(isMobileDevice()){
+        [].forEach.call(document.getElementsByClassName("fixed-position"), element => {
+            element.classList.remove("fixed-position");
+        });
+    }    
+}
+
+window.onload = removeFixedPosition;
+</script><style>.fixed-position{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 64px; 
+    bottom: 0;
+}
+</style><div class="fixed-position"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScf6s4EG-X4s1Y-6whA7NPaOwQnfAEIsdKLf_-rRrwvEoaTjQ/viewform?embedded=true" style="width:100%;height: 100%;" frameborder="0"></iframe></div></main><script>var drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector(".mdc-drawer"));
 
 var button = document.querySelector(".mdc-top-app-bar__navigation-icon");
 button.addEventListener('click', function() {

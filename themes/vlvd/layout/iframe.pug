@@ -1,0 +1,29 @@
+extends _partial/layout
+
+block content
+    script.
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        };
+        
+        function removeFixedPosition() {
+            if(isMobileDevice()){
+                [].forEach.call(document.getElementsByClassName("fixed-position"), element => {
+                    element.classList.remove("fixed-position");
+                });
+            }    
+        }
+
+        window.onload = removeFixedPosition;
+
+    style.
+        .fixed-position{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 64px; 
+            bottom: 0;
+        }
+
+    div.fixed-position!= page.content
+    
