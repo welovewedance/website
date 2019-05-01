@@ -5,3 +5,14 @@ block content
         header
             h1= page.title
         != page.more
+    
+    style.
+        .apply-button {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            margin-right: 24px;
+            margin-bottom: 24px;
+            z-index: 900;
+        }
+    a.apply-button.mdc-button.mdc-button--raised(href= "報名") 立即報名
