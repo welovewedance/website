@@ -5,6 +5,10 @@ menu:
       url: /
       icon: local_activity
   聯絡我們: 
+    Facebook:
+      url: https://facebook.com/welovewedance
+      external: true
+      img: /imgs/facebook-logo.png
     Messenger:
       url: https://m.me/welovewedance
       external: true
