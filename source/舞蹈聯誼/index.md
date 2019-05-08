@@ -1,5 +1,5 @@
 ---
-title: 舞蹈聯誼派對簡介
+title: 舞蹈聯誼簡介
 ---
 <img src="/imgs/d/d (1).jpg" width="100%">
 <img src="/imgs/d/d (2).jpg" width="100%">
