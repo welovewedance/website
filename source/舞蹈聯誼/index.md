@@ -1,4 +1,5 @@
 ---
+layout: imglist
 title: 舞蹈聯誼簡介
 ---
 <img src="/imgs/d/d (1).jpg" width="100%">
