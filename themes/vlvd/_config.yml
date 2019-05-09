@@ -27,3 +27,5 @@ node_sass:
   outputStyle: nested
   precision: 5
   sourceComments: false
+
+google_analytics: UA-137015305-2
