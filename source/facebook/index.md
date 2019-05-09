@@ -1,4 +1,5 @@
 ---
+layout: redirect
 title: facebook
+target: https://facebook.com/welovewedance
 ---
-<meta http-equiv="refresh" content="0;url=https://facebook.com/welovewedance">
