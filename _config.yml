@@ -5,15 +5,15 @@
 # Site
 title: 樂舞派對| we love we dance
 subtitle:
-description:
+description: 一場歡樂又浪漫的舞蹈派對，分組活動輕鬆交流，還有午茶搭配美味點心，一起 好好地玩耍！無須舞蹈經驗、無須攜伴參加，輕鬆在舞動延展中愛上自己、認識 他人！來加入最浪漫、最時尚的交友派對！
 keywords:
-author: John Doe
+author: Kahou
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://welovewedance.com
 root: /
 permalink: :title/
 permalink_defaults:
