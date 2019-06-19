@@ -15,3 +15,6 @@ block content
             margin-bottom: 24px;
         }
     a.apply-button.mdc-button.mdc-button--raised.mdc-elevation--z6(href= "報名" target="_blank") 立即報名
+
+    script.
+        document.getElementsByClassName("apply-button")[0].onclick = function() {fbq('trackCustom', '報名');};
